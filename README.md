@@ -12,10 +12,7 @@ UX Loadscreen
 * Rules text
 * Basic server info slots
 
-```
-INSTALL
-```
-
+**INSTALL GUIDE**
 ```
 Download the latest release from: https://github.com/JackCrispy/UX-loadscreen/releases
 Unzip the file.
@@ -24,6 +21,10 @@ Put start UX-loadscreen in your server.cfg
 ---------------------------------------------
 Change the music by uploading your own mp3 file, it must be called song.mp3.
 ```
+
+**NEED SUPPORT?**
+Make an issue.
+Join my Discord: https://discord.gg/4MK5Mv8
 
 ![Background is RGB](/github/loadscreen-1.PNG)
 
