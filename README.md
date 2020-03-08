@@ -12,7 +12,7 @@ UX Loadscreen
 * Rules text
 * Basic server info slots
 
-![Background is RGB](/github/ss.png)
+![Background is RGB](/github/loadscreen-1.PNG)
 
 **MORE SOON**
 
