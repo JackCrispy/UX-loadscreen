@@ -17,7 +17,7 @@ UX Loadscreen
 ```
 Download the latest release from: https://github.com/JackCrispy/UX-loadscreen/releases
 Unzip the file.
-Put src & __resource.lua in your resources folder
+Drop UX-Loadscreen in your resources folder
 Put start UX-loadscreen in your server.cfg
 ---------------------------------------------
 Change the music by uploading your own mp3 file, it must be called song.mp3.
