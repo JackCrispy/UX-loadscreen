@@ -4,6 +4,7 @@ A loadscreen for FiveM - https://fivem.net
 ```
 UX Loadscreen
 ```
+**FEATURES**
 
 * Music
 * RGB Animation Background
@@ -24,15 +25,15 @@ Change the music by uploading your own mp3 file, it must be called song.mp3.
 
 **NEED SUPPORT?**
 * Make an issue.
-* Discord: https://discord.gg/4MK5Mv8 (Jack Crispy)
-
-![Background is RGB](/github/loadscreen-1.PNG)
+* Discord: https://discord.gg/36QrZv2
+`
+**GET EARLY RELEASES**
+Join our Discord to get early releases & updates + report bugs.
+- https://discord.gg/36QrZv2
 
 **MORE SOON**
 
-This is a pretty nice looking loadscreen I created in just under 3hours. 
-I'll be updating it soon to fix some small issues. + If you want something added just drop a comment with what you want :smiley:
- 
+If you want something added just drop a comment with what you want :smiley:
 Watch the YouTube video: https://www.youtube.com/watch?v=xbqZdbfi6ec
 
 
