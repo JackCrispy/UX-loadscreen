@@ -26,7 +26,7 @@ Change the music by uploading your own mp3 file, it must be called song.mp3.
 **NEED SUPPORT?**
 * Make an issue.
 * Discord: https://discord.gg/36QrZv2
-`
+
 **GET EARLY RELEASES**
 Join our Discord to get early releases & updates + report bugs.
 - https://discord.gg/36QrZv2
