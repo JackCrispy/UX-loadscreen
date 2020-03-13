@@ -47,6 +47,13 @@ window.onload = function reload() {
     }
   }
 
+  window.onkeydown = function(e) {
+    var elem = e.target.nodename;
+    if( elem !== 'TEXTAREA' && elem != 'INPUT' ) {
+        return !(e.keyCode == 32);
+    }
+};
+
 };
 
 let player;
