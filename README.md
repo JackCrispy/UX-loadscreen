@@ -23,11 +23,9 @@ Unzip the file.
 Drop UX-Loadscreen in your resources folder
 Fill out basic.js file to configure the loadscreen!
 Put start UX-loadscreen in your server.cfg
----------------------------------------------
 ```
 
 **NEED SUPPORT?**
-* Make an issue.
 * Discord: https://discord.gg/36QrZv2
 
 **HOW TO CONFIGURE**
