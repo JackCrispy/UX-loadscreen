@@ -4,9 +4,6 @@ loadscreen 'src/index.html'
 
 files {
     'src/index.html',
-    'src/song.mp3',
     'src/css/styles.css',
-    'src/js/basic.js',
-    'src/js/particles.js*',
-    'src/js/maps/particles.js.map'
+    'src/js/main/basic.js',
 }
