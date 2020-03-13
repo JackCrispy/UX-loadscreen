@@ -2,30 +2,37 @@
 A loadscreen for FiveM - https://fivem.net
 
 ```
-UX Loadscreen
+UX Loadscreen v2
 ```
 **FEATURES**
 
-* Music
+* Music w/ custom player
 * RGB Animation Background
 * Particles
 * Staff listed
 * Rules text
 * Basic server info slots
+* Warning System
+* Admin Panel (SOON)
+* News System (SOON)
 
 **INSTALL GUIDE**
 ```
 Download the latest release from: https://github.com/JackCrispy/UX-loadscreen/releases
 Unzip the file.
 Drop UX-Loadscreen in your resources folder
+Fill out basic.js file to configure the loadscreen!
 Put start UX-loadscreen in your server.cfg
 ---------------------------------------------
-Change the music by uploading your own mp3 file, it must be called song.mp3.
 ```
 
 **NEED SUPPORT?**
 * Make an issue.
 * Discord: https://discord.gg/36QrZv2
+
+**HOW TO CONFIGURE**
+To configure UX Loadscreen, go to src/js/main/basic.js
+There will be a section at the top where you can change all your settings. If you need support refer above.
 
 **GET EARLY RELEASES**
 Join our Discord to get early releases & updates + report bugs.
