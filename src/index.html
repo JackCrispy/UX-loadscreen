@@ -1,56 +1,84 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/particles.js"></script>
-    <canvas id="particles">
-    </canvas>
-    <script src="https://kit.fontawesome.com/4c42749b38.js" crossorigin="anonymous"></script>
-  </head>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css">
+  <script src="/config.js"></script>
+  <script src="js/main/basic.js"></script>
+  <script src="js/music/player.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <canvas id="rgb"></canvas>
+  <canvas id="background"></canvas>
+  <script src="https://kit.fontawesome.com/4c42749b38.js" crossorigin="anonymous"></script>
+  <title>UX Loadscreen | discord.gg/j3tGmF7</title>
+</head>
 
-
-    <h1>FreelandsRP</h1>
-
-  <dl>
-    <a href="javascript:void(0)" class="dropbtn">Rules</a>
-      <div class="divider"></div>
-        <div class="dropdown-content">
-          <a><i class="far fa-times-circle"></i> No RDM/VDM</a>
-          <a><i class="far fa-times-circle"></i> No Cop Baiting</a>
-          <a><i class="far fa-times-circle"></i> No Mass Spawning</a>
-          <a><i class="far fa-times-circle"></i> Be Respectful</a>
-          <a><i class="far fa-times-circle"></i> No Running in PT</a>
-          <a><i class="far fa-times-circle"></i> No Shooing at Spawn</a>
-       </div>
+<body>
+  <div class="alert warning" id="wholediv">
+    <span class="closebtn">&times;</span>
+    <div id="warningd">
+      <i class="fas fa-exclamation-triangle"></i><b> Warning!</b> <span id="warning"></span>
     </div>
-  </dl>
+  </div>
 
-  <dt>
-   <a href="javascript:void(0)" class="dropbtn">Links</a>
-     <div class="divider"></div>
-        <div class="dropdown-content">
-          <a href="https://discord.gg/GwqRMbJ"><i class="fab fa-discord"></i> discord.gg/GwqRMbJ</a>
-          <a href="https://freelandsrp.com"><i class="fas fa-globe"></i> freelandsrp.com</a>
-        </div>
-     </div>
-  </dt>    
+  <div class="middle-text">
+    <h1 id="middle-text"></h1>
+  </div>
 
-  <dd>
-    <a href="javascript:void(0)" class="dropbtn">Staff</a>
-    <div class="divider"></div>
-      <div class="dropdown-content">
-          <a class="grid-item"><img src="https://cdn.discordapp.com/avatars/522503261941661727/bf2bb374a954fcc90637724842be4121.png" alt="Avatar" width="142" height="142" align="middle">  Jack Crispy</a></dfn>
-          <a class="grid-item"><img src="https://cdn.discordapp.com/avatars/247879509922021378/166e32086435fd83a260194cc1aa655f.png" alt="Avatar" width="142" height="142" align="middle">  Osman</a></dfn>
-          <a class="grid-item"><img src="https://cdn.discordapp.com/avatars/340766966077980674/a_f1b462b17102e95e1e5a0ab847ed99a2.gif" alt="Avatar" width="142" height="142" align="middle">  lo</a></dfn>
-          <a class="grid-item"><img src="https://cdn.discordapp.com/avatars/188013936442867713/a_6bba7a65fbe110646336ea57a9f2bf34.gif" alt="Avatar" width="142" height="142" align="middle">  Tony</a></dfn>
-          <a class="grid-item"><img src="https://cdn.discordapp.com/avatars/423886415529508874/3745fb4a765ea410ee5752b91974f5f2.png" alt="Avatar" width="142" height="142" align="middle">  SWE</a></dfn>
-          <a class="grid-item"><img src="https://cdn.discordapp.com/avatars/525307834175324170/ea628363617d2a24c97f3e9f5abeb116.png" alt="Avatar" width="142" height="142" align="middle">  Sander</a></dfn>
-        </div>
-     </div>
-  </dd>
-</li>
+  <div style="z-index: 1000000;" id="audio-slider">
+    <div id="audio-bg">
+      <div id="audio-img">
+        <img id="pr-img" width="60" height="auto" src="https://via.placeholder.com/150" alt="profile" srcset="">
+      </div>
+      <div id="aud-cont">
+        <button class="button-aud" id="btn-aud-play" onclick="playAudio()"><i class="fas fa-play-circle"></i></button>
+        <button class="button-aud" id="btn-aud-play" onclick="stopAudio()"><i class="fas fa-pause-circle"></i></button>
+        <button title="Coming soon!" class="button-aud has-tooltip-info" id="btn-aud-play"><i
+            class="fas fa-volume-mute"></i></button>
+        <!-- <button class="button has-tooltip-info" data-tooltip="Tooltip Text">Info tooltip</button> -->
+      </div>
+      <div class="mar">
+        <marquee behavior="" direction="left" id="" scrolldelay="150"><span style="padding: 10px;" id="scroll"></span>
+        </marquee>
+      </div>
+    </div>
+  </div>
+  <div class="columns">
+    <div class="column">
+      <h3 class="col-header">Rules</h3>
+      <div class="divider"></div>
+      <p id="col-p"><i class="far fa-times-circle"></i> No RDM/VDN</p>
+      <p id="col-p"><i class="far fa-times-circle"></i> No Cops Baiting</p>
+      <p id="col-p"><i class="far fa-times-circle"></i> No Mass Spawning</p>
+      <p id="col-p"><i class="far fa-times-circle"></i> Be Respectful</p>
+      <p id="col-p"><i class="far fa-times-circle"></i> No Shooting at Spawn</p>
+    </div>
+    <div class="column">
+      <h3 class="col-header">Links</h3>
+      <div class="divider"></div>
+      <p id="col-p"><i class="fab fa-discord"></i> discord.gg/j3tGmF7</p>
+      <p id="col-p"><i class="fas fa-globe"></i> freelandsrp.com</p>
+    </div>
+    <div class="column">
+      <h3 class="col-header">Staff</h3>
+      <div class="divider"></div>
+      <div class="staff-grid">
+          <p class="grid-item"><img src="https://cdn.discordapp.com/avatars/522503261941661727/bf2bb374a954fcc90637724842be4121.png" alt="Avatar" width="50" height="auto" align="middle">  Jack</p></dfn>
+          <p class="grid-item"><img src="https://cdn.discordapp.com/avatars/405849023837241344/5096bc2a7c0656865518dcab907fc09a.png" alt="Avatar" width="50" height="auto" align="middle">  Koalo</p></dfn>
+          <p class="grid-item"><img src="https://cdn.discordapp.com/avatars/419029530955481089/3789adad04014d13c4b6eeb6fb42fa12.webp" alt="Avatar" width="50" height="auto" align="middle"> Adam</p></dfn>
+          <p class="grid-item"><img src="https://cdn.discordapp.com/avatars/311151875682598943/9f4523aa4e7ba2da78dcc8ea20a3685a.png" alt="Avatar" width="50" height="auto" align="middle">  JeaSon</p></dfn>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
 
-<script src="js/basic.js"></script>
+</body>
+
+</html>
+<div id="yt-wrap">
+  <div id="ytplayer"></div>
+</div>
