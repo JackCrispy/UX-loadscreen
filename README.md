@@ -1,3 +1,10 @@
+# THIS IS AN OLD BRANCH! GO TO v2 FOR THE NEWEST LOADSCREEN FILES!
+## THIS IS AN OLD BRANCH! GO TO v2 FOR THE NEWEST LOADSCREEN FILES!
+### THIS IS AN OLD BRANCH! GO TO v2 FOR THE NEWEST LOADSCREEN FILES!
+
+#### No support given on old branch!
+
+
 # UX-loadscreen
 A loadscreen for FiveM - https://fivem.net
 
