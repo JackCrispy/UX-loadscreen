@@ -19,6 +19,12 @@
     position: absolute;
   }
 
+  html {
+    background-image: url("https://i.pinimg.com/originals/ae/77/1b/ae771b7e8140ed86eb38e966f0374a73.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   }
   #pr-img {
     border-radius: 500px;
     transform: translateY(15px);
@@ -28,7 +34,7 @@
 
   #rgb{
     width: 100%;
-    height: 145%;
+    height: 110%;
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
     background-size: 1000% 1000%;
     position: absolute;
@@ -210,3 +216,28 @@ display: flex;
   .closebtn:hover {
     color: black;
   }
+
+  .loadbar {
+    border-radius: 25px;
+    background-color: #ffffff5b;
+    height: 27px;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
+.load {
+    width: 10%;
+    border-radius: 25px;
+    background-color: #0000009f;
+    height: 27px;
+
+    position: absolute;
+    left: 10%;
+}
