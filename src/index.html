@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css">
-  <script src="/config.js"></script>
   <script src="js/main/basic.js"></script>
-  <script src="js/music/player.js"></script>
+  <script src="js/main/loadbar.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <canvas id="rgb"></canvas>
   <canvas id="background"></canvas>
@@ -46,6 +45,12 @@
       </div>
     </div>
   </div>
+  <div class="loadbar" id="loadbar">
+    <div class="load"></div>
+  </div>
+  <div id="yt-wrap">
+    <div id="ytplayer"></div>
+  </div>
   <div class="columns">
     <div class="column">
       <h3 class="col-header">Rules</h3>
@@ -66,12 +71,20 @@
       <h3 class="col-header">Staff</h3>
       <div class="divider"></div>
       <div class="staff-grid">
-          <p class="grid-item"><img src="https://cdn.discordapp.com/avatars/522503261941661727/bf2bb374a954fcc90637724842be4121.png" alt="Avatar" width="50" height="auto" align="middle">  Jack</p></dfn>
-          <p class="grid-item"><img src="https://cdn.discordapp.com/avatars/405849023837241344/5096bc2a7c0656865518dcab907fc09a.png" alt="Avatar" width="50" height="auto" align="middle">  Koalo</p></dfn>
-          <p class="grid-item"><img src="https://cdn.discordapp.com/avatars/419029530955481089/3789adad04014d13c4b6eeb6fb42fa12.webp" alt="Avatar" width="50" height="auto" align="middle"> Adam</p></dfn>
-          <p class="grid-item"><img src="https://cdn.discordapp.com/avatars/311151875682598943/9f4523aa4e7ba2da78dcc8ea20a3685a.png" alt="Avatar" width="50" height="auto" align="middle">  JeaSon</p></dfn>
+        <p class="grid-item"><img
+            src="https://cdn.discordapp.com/avatars/522503261941661727/2749626614bcabb4596dd94558874cf2.png"
+            alt="Avatar" width="50" height="auto" align="middle"> Jack</p></dfn>
+        <p class="grid-item"><img
+            src="https://cdn.discordapp.com/avatars/405849023837241344/5096bc2a7c0656865518dcab907fc09a.png"
+            alt="Avatar" width="50" height="auto" align="middle"> Koalo</p></dfn>
+        <p class="grid-item"><img
+            src="https://cdn.discordapp.com/avatars/419029530955481089/3789adad04014d13c4b6eeb6fb42fa12.webp"
+            alt="Avatar" width="50" height="auto" align="middle"> Adam</p></dfn>
+        <p class="grid-item"><img
+            src="https://cdn.discordapp.com/avatars/311151875682598943/9f4523aa4e7ba2da78dcc8ea20a3685a.png"
+            alt="Avatar" width="50" height="auto" align="middle"> JeaSon</p></dfn>
+      </div>
     </div>
-  </div>
   </div>
   </div>
   </div>
@@ -79,6 +92,3 @@
 </body>
 
 </html>
-<div id="yt-wrap">
-  <div id="ytplayer"></div>
-</div>
